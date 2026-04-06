@@ -1,133 +1,320 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Veterinária Perto de Mim para Cães e Gatos</title>
-    <meta name="description" content="Procurando uma clínica veterinária perto de mim? Encontre atendimento médico de qualidade, consultas e exames para cães e gatos na sua região.">
+    <title>Clínica Veterinária Perto de Mim - Guia Completo para Cães e Gatos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #374151; margin: 0; padding: 0; background-color: #ffffff; }
-        header { background-color: #0ea5e9; color: white; padding: 1.5rem 0; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        header h2 { margin: 0; font-size: 1.5rem; border: none; padding: 0; color: white; }
-        nav { background: #f0f9ff; padding: 15px; border-bottom: 1px solid #bae6fd; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-        nav a { text-decoration: none; color: #0369a1; font-weight: bold; font-size: 0.85rem; padding: 6px 12px; border-radius: 4px; transition: all 0.3s; background: white; border: 1px solid #bae6fd; }
-        nav a:hover { background: #bae6fd; color: #0c4a6e; }
-        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
-        h1 { color: #0c4a6e; font-size: 2.2rem; text-align: center; margin-bottom: 20px; line-height: 1.2; }
-        h2 { color: #0369a1; border-left: 5px solid #0ea5e9; padding-left: 15px; margin-top: 40px; font-size: 1.8rem; }
-        h3 { color: #0e7490; margin-top: 25px; font-size: 1.4rem; }
-        .ads { background: #f8fafc; border: 2px dashed #cbd5e1; padding: 30px; text-align: center; margin: 30px 0; color: #64748b; font-style: italic; border-radius: 8px; }
-        footer { background: #f8fafc; color: #4b5563; padding: 50px 20px; text-align: center; margin-top: 60px; border-top: 1px solid #e2e8f0; }
-        footer p { margin-bottom: 20px; opacity: 1; }
-        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 800px; margin: 0 auto; }
-        footer a { color: #0369a1; text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
-        footer a:hover { color: #0ea5e9; text-decoration: underline; }
-        .content-text { text-align: justify; font-size: 1.1rem; }
-        .cta-box { background: #f0f9ff; border: 1px solid #0ea5e9; padding: 25px; border-radius: 10px; text-align: center; margin-top: 40px; }
-        .cta-box p { font-weight: bold; color: #0369a1; font-size: 1.2rem; }
-        @media (max-width: 768px) { h1 { font-size: 1.8rem; } nav { gap: 5px; } nav a { font-size: 0.75rem; padding: 4px 8px; } }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
-<body>
-    <header>
-        <h2>Pet Perto de Mim</h2>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header / Logo Only (Menu Removido) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-center items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-paw text-teal-600 text-3xl"></i>
+                <span class="text-2xl font-bold text-teal-800 tracking-tight">VetPerto</span>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="pagina1.html">Pet Shop</a>
-        <a href="pagina2.html">Clínica Vet</a>
-        <a href="pagina3.html">Hospital 24h</a>
-        <a href="pagina4.html">Banho e Tosa</a>
-        <a href="pagina5.html">Loja de Ração</a>
-        <a href="pagina6.html">Veterinário</a>
-        <a href="pagina7.html">Pet Shop Barato</a>
-        <a href="pagina8.html">Hotel Pet</a>
-        <a href="pagina9.html">Creche</a>
-        <a href="pagina10.html">Adestrador</a>
-        <a href="pagina11.html">Especialista Gatos</a>
-        <a href="pagina12.html">Vacinação</a>
-        <a href="pagina13.html">Acessórios</a>
-        <a href="pagina14.html">Banho e Tosa Região</a>
-        <a href="pagina15.html">Remédios Pet</a>
-        <a href="pagina16.html">Entrega Pet</a>
-        <a href="pagina17.html">Vet Emergência</a>
-        <a href="pagina18.html">Serviços Pet</a>
-        <a href="pagina19.html">Guia Cidade</a>
-    </nav>
 
-    <div class="container">
-        <h1>Clínica Veterinária Perto de Mim para Cães e Gatos</h1>
-        
-        <div class="ads">Espaço para anúncio Google AdSense</div>
-
-        <div class="content-text">
-            <p>A saúde dos nossos animais de estimação não pode esperar. Quando surge um problema de saúde ou simplesmente chega a hora do check-up anual, a primeira coisa que passa pela cabeça de um tutor é: "preciso de uma <strong>clínica veterinária perto de mim</strong>". A proximidade de um centro médico veterinário é vital para garantir que cães e gatos recebam o suporte necessário com agilidade e segurança. Uma clínica veterinária próxima reduz o tempo de viagem, o que é especialmente benéfico para gatos, que costumam se estressar muito em transportes.</p>
-
-            <p>Além da conveniência, escolher uma clínica na região permite criar um vínculo de confiança com o médico veterinário. Ter um profissional que conhece o histórico completo do seu pet facilita diagnósticos e torna o tratamento muito mais assertivo. Seja para uma vacinação de rotina ou para tratar uma patologia específica, a clínica veterinária é o porto seguro de todo dono de pet.</p>
-
-            <h2>Serviços Médicos em uma Clínica Veterinária Próxima</h2>
-            <p>As clínicas veterinárias modernas oferecem uma estrutura completa para cuidar da saúde animal. Ao buscar por serviços para pets na região, você encontrará clínicas equipadas para realizar:</p>
-            
-            <ul>
-                <li><strong>Consultas de Rotina:</strong> Avaliação geral da saúde, peso e comportamento.</li>
-                <li><strong>Vacinação:</strong> Aplicação de vacinas essenciais como a V10, V8, Antirrábica e contra a Gripe.</li>
-                <li><strong>Exames Laboratoriais:</strong> Hemogramas, exames de urina e fezes realizados rapidamente.</li>
-                <li><strong>Diagnóstico por Imagem:</strong> Ultrassonografia e Raio-X para avaliações internas.</li>
-                <li><strong>Cirurgias Eletivas:</strong> Como a castração, fundamental para o controle populacional e prevenção de doenças.</li>
-                <li><strong>Odontologia Pet:</strong> Limpeza de tártaro e cuidados com a saúde bucal.</li>
-            </ul>
-
-            <div class="ads">Espaço para anúncio Google AdSense</div>
-
-            <h2>Como avaliar a qualidade de uma clínica veterinária?</h2>
-            <p>Não basta ser uma <strong>clínica veterinária perto de mim</strong>; ela precisa ser excelente. O primeiro ponto a observar é a limpeza e a organização do local. Um ambiente estéril é fundamental para evitar infecções hospitalares em animais. Além disso, verifique se a clínica possui registro no Conselho Regional de Medicina Veterinária (CRMV) e se os profissionais são atenciosos e explicam detalhadamente os procedimentos.</p>
-
-            <p>Outro diferencial é o atendimento especializado. Algumas clínicas são "Cat Friendly", com salas de espera e consultórios exclusivos para felinos, o que minimiza o estresse. Outras possuem especialistas em dermatologia, cardiologia ou oncologia, oferecendo um suporte muito mais profundo para casos complexos.</p>
-
-            <h3>Dicas para a primeira consulta do seu pet</h3>
-            <p>Para que a visita à clínica seja produtiva, siga estas recomendações:</p>
-            <ol>
-                <li><strong>Leve a Carteira de Vacinação:</strong> É o documento mais importante do seu pet.</li>
-                <li><strong>Anote Sintomas:</strong> Se o pet está doente, anote quando os sintomas começaram e se houve mudança na alimentação.</li>
-                <li><strong>Segurança:</strong> Use sempre guia para cães e caixa de transporte para gatos.</li>
-                <li><strong>Faça Perguntas:</strong> Não saia do consultório com dúvidas sobre medicamentos ou cuidados em casa.</li>
-            </ol>
-
-            <h2>Quando levar seu pet à clínica veterinária?</h2>
-            <p>O ideal é que cães e gatos visitem o veterinário pelo menos uma vez ao ano para exames preventivos. No entanto, procure uma clínica veterinária próxima imediatamente se notar: vômitos persistentes, diarreia, falta de apetite por mais de 24 horas, dificuldade para urinar, feridas que não cicatrizam ou qualquer alteração súbita de comportamento. Lembre-se: animais tendem a esconder a dor, por isso, qualquer sinal atípico deve ser investigado.</p>
-
-            <div class="cta-box">
-                <p>Encontre agora a melhor clínica veterinária perto de você e cuide bem do seu animal de estimação.</p>
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 px-4">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Clínica Veterinária Perto de Mim para Cães e Gatos</h1>
+            <p class="text-xl opacity-90 mb-8">
+                Localizar uma clínica confiável e próxima pode fazer toda a diferença para a saúde, bem-estar e qualidade de vida dos animais de estimação.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg border border-white/30 text-sm">
+                    <i class="fas fa-search mr-2"></i> Localização Facilitada
+                </span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg border border-white/30 text-sm">
+                    <i class="fas fa-heart mr-2"></i> Saúde Preventiva
+                </span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg border border-white/30 text-sm">
+                    <i class="fas fa-clock mr-2"></i> Atendimento 24h
+                </span>
             </div>
         </div>
+    </section>
 
-        <div class="ads">Espaço para anúncio Google AdSense</div>
-    </div>
+    <!-- Intro Content -->
+    <section class="container mx-auto px-4 py-16 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-lg leading-relaxed text-slate-600 mb-6">
+                    Encontrar uma <strong>clínica veterinária perto de mim para cães e gatos</strong> é uma das principais preocupações de quem possui um animal de estimação. Quando um pet precisa de cuidados médicos, vacinação ou atendimento emergencial, localizar uma clínica confiável e próxima é fundamental.
+                </p>
+                <p class="text-lg leading-relaxed text-slate-600">
+                    Hoje em dia, com o auxílio da internet e do Google, ficou muito mais fácil encontrar clínicas veterinárias especializadas. Neste guia completo, você vai entender como encontrar o local ideal, quais serviços são oferecidos e o que avaliar antes de escolher.
+                </p>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Veterinário cuidando de cachorro" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Diretório Pet Perto de Mim - Todos os direitos reservados.</p>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="pagina1.html">Pet Shop</a>
-            <a href="pagina2.html">Clínica Vet</a>
-            <a href="pagina3.html">Hospital 24h</a>
-            <a href="pagina4.html">Banho e Tosa</a>
-            <a href="pagina5.html">Loja de Ração</a>
-            <a href="pagina6.html">Veterinário</a>
-            <a href="pagina7.html">Pet Shop Barato</a>
-            <a href="pagina8.html">Hotel Pet</a>
-            <a href="pagina9.html">Creche</a>
-            <a href="pagina10.html">Adestrador</a>
-            <a href="pagina11.html">Especialista Gatos</a>
-            <a href="pagina12.html">Vacinação</a>
-            <a href="pagina13.html">Acessórios</a>
-            <a href="pagina14.html">Banho e Tosa Região</a>
-            <a href="pagina15.html">Remédios Pet</a>
-            <a href="pagina16.html">Entrega Pet</a>
-            <a href="pagina17.html">Vet Emergência</a>
-            <a href="pagina18.html">Serviços Pet</a>
-            <a href="pagina19.html">Guia Cidade</a>
+    <!-- Como Encontrar Section -->
+    <section id="encontrar" class="bg-teal-50 py-16 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-teal-900 mb-4">Como Encontrar uma Clínica Veterinária Perto de Mim</h2>
+                <p class="text-slate-600">A pesquisa geralmente acontece quando o tutor precisa de atendimento rápido ou acompanhamento próximo.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Google Maps Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-teal-100 card-hover">
+                    <div class="w-14 h-14 bg-teal-600 text-white rounded-full flex items-center justify-center mb-6 text-2xl">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Google & Google Maps</h3>
+                    <p class="text-slate-600 mb-4">Basta digitar a frase “clínica veterinária perto de mim” no buscador para visualizar:</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li><i class="fas fa-check text-teal-500 mr-2"></i> Avaliações de outros clientes</li>
+                        <li><i class="fas fa-check text-teal-500 mr-2"></i> Horário de funcionamento</li>
+                        <li><i class="fas fa-check text-teal-500 mr-2"></i> Telefone e Fotos</li>
+                        <li><i class="fas fa-check text-teal-500 mr-2"></i> Endereço completo</li>
+                    </ul>
+                </div>
+
+                <!-- Diretórios Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-teal-100 card-hover">
+                    <div class="w-14 h-14 bg-teal-600 text-white rounded-full flex items-center justify-center mb-6 text-2xl">
+                        <i class="fas fa-list-ul"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Sites de Diretórios</h3>
+                    <p class="text-slate-600">Utilize plataformas que reúnem várias clínicas para comparar estabelecimentos e escolher a melhor opção para seu pet.</p>
+                </div>
+
+                <!-- Redes Sociais Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-teal-100 card-hover">
+                    <div class="w-14 h-14 bg-teal-600 text-white rounded-full flex items-center justify-center mb-6 text-2xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Recomendações</h3>
+                    <p class="text-slate-600">Verifique indicações de amigos, familiares ou grupos de redes sociais dedicados a animais de estimação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Oferecidos -->
+    <section id="servicos" class="py-20 px-4 container mx-auto max-w-6xl">
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="md:w-1/3 sticky top-24">
+                <h2 class="text-4xl font-bold text-teal-900 mb-6">Serviços Oferecidos</h2>
+                <p class="text-lg text-slate-600 mb-8">Uma clínica especializada em cães e gatos oferece diversos serviços essenciais para manter a saúde em dia.</p>
+                <div class="bg-teal-600 p-8 rounded-3xl text-white shadow-xl">
+                    <h4 class="text-xl font-bold mb-4">Atendimento Emergencial</h4>
+                    <p class="opacity-90 mb-4 text-sm">Extremamente importante quando o animal apresenta sintomas graves ou sofre algum acidente.</p>
+                    <div class="flex items-center space-x-2 font-mono font-bold">
+                        <i class="fas fa-ambulance"></i>
+                        <span>PLANTÃO VETERINÁRIO</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-2/3 grid gap-6">
+                <!-- Consulta -->
+                <div class="flex gap-6 p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="shrink-0 w-16 h-16 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center text-2xl font-bold">01</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Consultas Veterinárias</h3>
+                        <p class="text-slate-600">Essenciais para avaliar a saúde geral. O veterinário pode identificar doenças, orientar sobre alimentação e cuidados específicos.</p>
+                    </div>
+                </div>
+
+                <!-- Vacinação -->
+                <div class="flex gap-6 p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="shrink-0 w-16 h-16 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center text-2xl font-bold">02</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Vacinação</h3>
+                        <p class="text-slate-600">Protege contra doenças graves. As clínicas seguem um calendário rigoroso desde os filhotes até a fase adulta.</p>
+                    </div>
+                </div>
+
+                <!-- Exames -->
+                <div class="flex gap-6 p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="shrink-0 w-16 h-16 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center text-2xl font-bold">03</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Exames Laboratoriais</h3>
+                        <p class="text-slate-600 mb-2">Testes que ajudam a identificar problemas antes que se tornem graves:</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                            <span class="bg-slate-100 px-3 py-1 rounded-full">SANGUE</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full">URINA</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full">FEZES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cirurgias -->
+                <div class="flex gap-6 p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="shrink-0 w-16 h-16 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center text-2xl font-bold">04</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Cirurgias Veterinárias</h3>
+                        <p class="text-slate-600">Estrutura para procedimentos simples e complexos: castrações, cirurgias ortopédicas e tratamentos de emergência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importância do Acompanhamento -->
+    <section class="bg-slate-900 text-white py-20 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cão e Gato saudáveis" class="rounded-3xl shadow-2xl">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl font-bold mb-6">A Importância do Acompanhamento Veterinário</h2>
+                    <p class="opacity-80 mb-6">Levar o animal regularmente a uma clínica perto de você é essencial para prevenir doenças e garantir uma vida mais longa e saudável.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-teal-400 mt-1"><i class="fas fa-search-plus"></i></div>
+                            <p>Detectar doenças precocemente</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-teal-400 mt-1"><i class="fas fa-chart-line"></i></div>
+                            <p>Acompanhar o crescimento do animal</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-teal-400 mt-1"><i class="fas fa-syringe"></i></div>
+                            <p>Manter a vacinação em dia</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-teal-400 mt-1"><i class="fas fa-utensils"></i></div>
+                            <p>Orientações sobre alimentação e cuidados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Escolher -->
+    <section id="escolher" class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Como Escolher a Melhor Clínica Veterinária</h2>
+                <p class="text-slate-500">Avalie estes 4 pilares fundamentais antes de decidir.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 border border-slate-100 rounded-2xl">
+                    <i class="fas fa-star text-amber-400 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Avaliações</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Comentários positivos indicam bom atendimento e profissionais qualificados.</p>
+                </div>
+                <div class="text-center p-6 border border-slate-100 rounded-2xl">
+                    <i class="fas fa-hospital text-blue-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Estrutura</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Ambiente limpo, organizado e equipamentos adequados para exames.</p>
+                </div>
+                <div class="text-center p-6 border border-slate-100 rounded-2xl">
+                    <i class="fas fa-user-md text-teal-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Profissionais</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Veterinários experientes e especializados em pequenos animais.</p>
+                </div>
+                <div class="text-center p-6 border border-slate-100 rounded-2xl">
+                    <i class="fas fa-map-marker-alt text-red-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Localização</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Facilita o acesso em emergências e nas consultas de rotina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clínica 24 Horas Banner -->
+    <section class="py-12 px-4 container mx-auto max-w-5xl">
+        <div class="bg-red-50 border-2 border-red-100 p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="max-w-md">
+                <h2 class="text-2xl font-bold text-red-900 mb-4">Clínica Veterinária 24 Horas</h2>
+                <p class="text-red-800 opacity-80 text-sm">Algumas situações exigem atendimento imediato fora do horário comercial, como intoxicação, acidentes, convulsões e dificuldades respiratórias.</p>
+            </div>
+            <div class="shrink-0 bg-red-600 text-white px-8 py-4 rounded-2xl text-center shadow-lg">
+                <p class="text-xs uppercase tracking-widest font-bold mb-1">Disponível</p>
+                <p class="text-3xl font-bold">24 HORAS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuidados Essenciais -->
+    <section id="cuidados" class="py-20 px-4 bg-teal-50">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-teal-900 mb-12">Cuidados Essenciais Diários</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fas fa-bone text-teal-600 mb-2"></i>
+                    <p class="text-xs font-bold">Alimentação</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fas fa-tint text-blue-500 mb-2"></i>
+                    <p class="text-xs font-bold">Água Limpa</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fas fa-shield-alt text-teal-600 mb-2"></i>
+                    <p class="text-xs font-bold">Vacinação</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fas fa-bug text-orange-500 mb-2"></i>
+                    <p class="text-xs font-bold">Vermifugação</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fas fa-running text-teal-600 mb-2"></i>
+                    <p class="text-xs font-bold">Brincadeiras</p>
+                </div>
+            </div>
+            <p class="mt-8 text-slate-600 italic">Esses hábitos ajudam a manter o animal saudável e feliz.</p>
+        </div>
+    </section>
+
+    <!-- Conclusão -->
+    <footer class="bg-white pt-20 pb-10 border-t border-slate-100">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Conclusão</h2>
+            <div class="space-y-6 text-lg text-slate-600 mb-12">
+                <p>Encontrar uma <strong>clínica veterinária perto de mim para cães e gatos</strong> é fundamental para garantir que seu animal de estimação receba os cuidados necessários ao longo da vida.</p>
+                <p>Clínicas oferecem serviços essenciais como consultas, vacinação, exames e atendimentos de emergência. Escolher um local confiável e com bons profissionais faz toda a diferença na saúde do seu pet.</p>
+                <p>Ao manter visitas regulares ao veterinário e seguir as orientações profissionais, você garante mais qualidade de vida, segurança e bem-estar para seu companheiro de quatro patas. Cuidar da saúde do seu pet é uma demonstração de carinho e responsabilidade que contribui para uma convivência longa e feliz.</p>
+            </div>
+            
+            <div class="border-t border-slate-100 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-paw text-teal-600 text-2xl"></i>
+                    <span class="text-xl font-bold text-teal-800">VetPerto</span>
+                </div>
+                <p class="text-slate-400 text-sm">© 2024 Guia Veterinário Pet. Todos os direitos reservados.</p>
+                <div class="flex space-x-4 text-slate-400">
+                    <a href="#" class="hover:text-teal-600"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-teal-600"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-teal-600"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
