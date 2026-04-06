@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Perto de Mim: Onde Comprar Produtos para Seu Pet</title>
+    <meta name="description" content="Encontre o melhor pet shop perto de mim para comprar ração, brinquedos e acessórios. Qualidade e preço baixo para cães e gatos na sua região.">
+    <style>
+        :root { 
+            --primary: #00a8e8; 
+            --secondary: #0077b6; 
+            --text: #333; 
+            --bg: #f8f9fa; 
+            --white: #ffffff; 
+            --accent: #e1f5fe; 
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+        
+        header { background: var(--white); border-bottom: 3px solid var(--primary); padding: 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .nav-wrapper { display: flex; flex-direction: column; align-items: center; padding: 10px 0; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--secondary); margin-bottom: 10px; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        
+        nav { display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; width: 100%; border-top: 1px solid #eee; padding-top: 10px; }
+        nav a { 
+            text-decoration: none; 
+            color: var(--text); 
+            font-size: 0.75rem; 
+            font-weight: 500; 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            background: var(--accent);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        nav a:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+        .nav-active { background: var(--secondary) !important; color: white !important; }
+
+        .hero { padding: 40px 0; text-align: center; background: white; margin-bottom: 20px; border-radius: 0 0 30px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: var(--secondary); margin-bottom: 15px; font-size: 2.2rem; letter-spacing: -1px; }
+        h2 { color: var(--primary); margin: 30px 0 15px; font-size: 1.8rem; }
+        h3 { color: var(--secondary); margin: 25px 0 12px; font-size: 1.4rem; }
+        
+        .adsense-space { background: #f0f0f0; border: 2px dashed #ddd; margin: 25px 0; padding: 30px; text-align: center; color: #999; border-radius: 12px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .content-section { background: var(--white); padding: 40px; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        p { margin-bottom: 1.5rem; text-align: justify; font-size: 1.05rem; }
+        ul { margin-bottom: 1.5rem; padding-left: 25px; }
+        li { margin-bottom: 10px; }
+
+        .cta-box { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 40px; border-radius: 20px; text-align: center; margin-top: 40px; }
+        .cta-box h2 { color: white; margin-top: 0; font-size: 2rem; }
+        .cta-button { display: inline-block; background: white; color: var(--secondary); padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: transform 0.2s; }
+        .cta-button:hover { transform: scale(1.05); }
+        
+        footer { background: #2c3e50; color: white; padding: 60px 0 30px; margin-top: 60px; text-align: center; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 40px; text-align: left; }
+        .footer-col h4 { margin-bottom: 15px; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px; }
+        .footer-links { display: flex; flex-direction: column; gap: 8px; }
+        .footer-links a { color: #bdc3c7; text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+        .footer-links a:hover { color: white; }
+        .copyright { border-top: 1px solid #444; padding-top: 20px; font-size: 0.8rem; color: #95a5a6; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .hero { padding: 30px 15px; }
+            .content-section { padding: 25px; }
+            nav a { font-size: 0.7rem; padding: 5px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo">🐾 Pet Perto de Mim</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pagina1.html" class="nav-active">Pet Shop</a>
+            <a href="pagina2.html">Clínica</a>
+            <a href="pagina3.html">Hospital 24h</a>
+            <a href="pagina4.html">Banho & Tosa</a>
+            <a href="pagina5.html">Ração</a>
+            <a href="pagina6.html">Veterinário</a>
+            <a href="pagina7.html">Preço Baixo</a>
+            <a href="pagina8.html">Hotel</a>
+            <a href="pagina9.html">Creche</a>
+            <a href="pagina10.html">Adestrador</a>
+            <a href="pagina11.html">Gatos</a>
+            <a href="pagina12.html">Vacinação</a>
+            <a href="pagina13.html">Acessórios</a>
+            <a href="pagina14.html">Estética</a>
+            <a href="pagina15.html">Remédios</a>
+            <a href="pagina16.html">Delivery</a>
+            <a href="pagina17.html">Emergência</a>
+            <a href="pagina18.html">Serviços</a>
+            <a href="pagina19.html">Guia Completo</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="hero">
+        <h1>Pet Shop Perto de Mim: Onde Comprar Produtos para Seu Pet</h1>
+        <p>Tudo o que você precisa saber para encontrar as melhores lojas especializadas na sua região.</p>
+    </div>
+
+    <div class="adsense-space">Espaço para Anúncio Adsense - Topo</div>
+
+    <article class="content-section">
+        <p>Encontrar um <strong>pet shop perto de mim</strong> é uma das primeiras coisas que tutores de animais pesquisam quando precisam comprar ração, brinquedos, remédios ou acessórios para seus pets. Hoje em dia, com a ajuda da internet e do Google, ficou muito mais fácil localizar lojas especializadas próximas da sua casa.</p>
+        
+        <p>Os pet shops oferecem uma grande variedade de produtos e serviços para garantir o bem-estar do seu animal de estimação. Seja para um cachorro, gato, pássaro ou até mesmo animais exóticos, essas lojas são essenciais para quem quer cuidar bem do seu companheiro.</p>
+        
+        <p>Neste guia completo, você vai entender como encontrar um pet shop perto de você, quais produtos normalmente são vendidos e o que considerar antes de escolher uma loja para comprar itens para seu pet.</p>
+
+        <h2>Como Encontrar um Pet Shop Perto de Mim</h2>
+        <p>Quando alguém procura por <strong>pet shop perto de mim</strong>, geralmente está buscando rapidez e praticidade. Felizmente existem várias formas simples de encontrar uma loja próxima.</p>
+        
+        <p>A forma mais comum é usar o Google Maps ou fazer uma busca no Google digitando exatamente essa frase. O buscador mostra uma lista de lojas próximas, avaliações de clientes, horário de funcionamento e até fotos do local.</p>
+        
+        <p>Outra maneira muito útil é acessar sites de diretórios de pet shops, que reúnem várias lojas em uma mesma página. Esses diretórios ajudam o usuário a comparar estabelecimentos, verificar avaliações e escolher a melhor opção. Além disso, redes sociais também podem ajudar na busca. Muitas lojas mantêm páginas atualizadas no Facebook e Instagram com promoções e informações importantes.</p>
+
+        <div class="adsense-space">Espaço para Anúncio Adsense - Meio do Conteúdo</div>
+
+        <h3>Produtos Que Você Pode Encontrar em um Pet Shop</h3>
+        <p>Um bom pet shop costuma oferecer uma grande variedade de produtos para atender diferentes necessidades dos animais de estimação. Entre os itens mais comuns encontrados em um pet shop estão:</p>
+        
+        <ul>
+            <li><strong>Rações e alimentos:</strong> A alimentação é um dos itens mais importantes para a saúde dos animais. Nos pet shops você encontra diferentes tipos de ração, como ração premium, ração natural e alimentos específicos para filhotes ou animais idosos.</li>
+            <li><strong>Brinquedos para pets:</strong> Os brinquedos ajudam no desenvolvimento físico e mental dos animais. Existem brinquedos para mastigar, correr, interagir e até brinquedos inteligentes.</li>
+            <li><strong>Acessórios para cães e gatos:</strong> Coleiras, guias, camas, caixas de transporte e roupas para pets são alguns exemplos de acessórios vendidos nesses estabelecimentos.</li>
+            <li><strong>Produtos de higiene:</strong> Shampoos, condicionadores, escovas e produtos de limpeza ajudam a manter o animal saudável e com boa aparência.</li>
+            <li><strong>Medicamentos e cuidados veterinários:</strong> Alguns pet shops também vendem medicamentos veterinários, suplementos e produtos para prevenção de pulgas e carrapatos.</li>
+        </ul>
+
+        <h2>Serviços Oferecidos por Pet Shops</h2>
+        <p>Além da venda de produtos, muitos pet shops oferecem serviços que ajudam no cuidado com os animais. Entre os serviços mais comuns estão:</p>
+        
+        <ul>
+            <li><strong>Banho e tosa:</strong> Esse é um dos serviços mais procurados. Profissionais especializados realizam o banho e o corte de pelo de forma segura e adequada para cada raça.</li>
+            <li><strong>Consultas veterinárias:</strong> Alguns pet shops contam com veterinários que realizam consultas e orientam os tutores sobre a saúde dos animais.</li>
+            <li><strong>Hospedagem para pets:</strong> Quando os donos precisam viajar, alguns estabelecimentos oferecem hospedagem temporária para os animais.</li>
+            <li><strong>Adestramento:</strong> Em alguns locais também é possível encontrar serviços de adestramento para cães.</li>
+        </ul>
+
+        <div class="adsense-space">Espaço para Anúncio Adsense - Final do Texto</div>
+
+        <h3>Como Escolher o Melhor Pet Shop</h3>
+        <p>Na hora de escolher um <strong>pet shop perto de mim</strong>, é importante considerar alguns fatores para garantir qualidade e segurança. Primeiramente, verifique as avaliações de outros clientes no Google. Comentários positivos geralmente indicam bom atendimento e bons produtos.</p>
+        
+        <p>Outro ponto importante é observar a limpeza e organização da loja. Um ambiente limpo demonstra cuidado com os animais e com os produtos vendidos. Também é recomendado verificar se os funcionários possuem conhecimento sobre os produtos. Um bom atendimento pode ajudar muito na escolha da ração ideal ou de acessórios adequados para seu pet. Além disso, comparar preços entre diferentes lojas pode ajudar a economizar dinheiro sem abrir mão da qualidade.</p>
+
+        <h2>Comprar em Pet Shop Online ou Presencial</h2>
+        <p>Hoje em dia muitas pessoas também optam por comprar produtos em pet shops online. Essa opção oferece praticidade e muitas vezes preços mais competitivos. No entanto, comprar em lojas físicas tem algumas vantagens. Você pode ver o produto de perto, receber orientação dos vendedores e levar o item imediatamente para casa.</p>
+        
+        <p>O ideal é usar as duas opções de forma inteligente. Pesquisar preços online e visitar um pet shop perto de você pode ajudar a encontrar a melhor oferta.</p>
+
+        <h2>Conclusão</h2>
+        <p>Buscar por <strong>pet shop perto de mim</strong> é a maneira mais rápida de encontrar lojas especializadas que oferecem produtos e serviços essenciais para os animais de estimação. Esses estabelecimentos são importantes para garantir alimentação adequada, higiene, diversão e cuidados de saúde para os pets.</p>
+        
+        <p>Ao escolher um bom pet shop, você garante que seu animal terá acesso a produtos de qualidade e profissionais preparados para ajudar no cuidado diário. Seja em lojas físicas ou online, o mais importante é sempre priorizar o bem-estar e a saúde do seu pet, garantindo que ele tenha uma vida feliz e saudável ao seu lado.</p>
+    </article>
+
+    <section class="cta-box">
+        <h2>Encontre agora o melhor pet shop perto de você!</h2>
+        <p>Não deixe para depois. Cuide da saúde e da felicidade do seu animal de estimação agora mesmo.</p>
+        <a href="pagina19.html" class="cta-button">Ver Guia Completo</a>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Saúde Pet</h4>
+                <div class="footer-links">
+                    <a href="pagina2.html">Clínica Veterinária</a>
+                    <a href="pagina3.html">Hospital 24 Horas</a>
+                    <a href="pagina6.html">Veterinários</a>
+                    <a href="pagina17.html">Emergência</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Estética e Lazer</h4>
+                <div class="footer-links">
+                    <a href="pagina4.html">Banho e Tosa</a>
+                    <a href="pagina8.html">Hotel Pet</a>
+                    <a href="pagina9.html">Creche</a>
+                    <a href="pagina14.html">Estética</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Suprimentos</h4>
+                <div class="footer-links">
+                    <a href="pagina5.html">Rações</a>
+                    <a href="pagina13.html">Acessórios</a>
+                    <a href="pagina15.html">Farmácia</a>
+                    <a href="pagina16.html">Delivery</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Diretório Pet Perto de Mim - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
